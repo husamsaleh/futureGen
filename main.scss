@@ -1,3 +1,9 @@
+
+:root{
+    --main-color:#0A58CA; 
+
+}
+
 *{
     box-sizing: border-box;
     padding: 0;
@@ -20,31 +26,77 @@ body{
     }
 }
 section.section{
-    height: 90vh;
+    height: 100vh;
     position: relative;
-    background-color: #0A58CA !important;
+    background-color: var(--main-color) !important;
     margin: 80px 0; 
-    .text{
+    
+    img{
+        position: absolute;
+        right: 10%;
+        top: 20%;
+        width: 400px;
+        
+        animation: movingupdown 7s  infinite;
+    }
+    .text{ 
         color: white;
         position: absolute;
-        bottom: 250px;
+        bottom:30%;
         left: 150px;
         animation:intro 1s ease-in-out  ;
-        span{
-            animation: sd 5s ease-in-out;
+        cursor: crosshair;
+        
+        h1{
+            animation: glow 10s ease-in-out infinite ;
         }
     }
 }
-
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: var(--main-color) ; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+  @media screen and (max-width:1000px) {
+    section.section{
+        .text{
+            left: 10px;
+        }
+        img{
+            width: 300px;
+            margin: auto;
+            right: 10%;
+            top: 20%;
+            
+        }
+    }
+}
+// @media screen and (max-width:700px) {
+//     section.section{
+//         .text{
+//             left: 10px;
+//         }
+//     }
+// }
 @keyframes intro {
     from {
         opacity: .3;
-        transform: translateX(-120%);
-
-        
+        transform: translateX(-120%); 
     }
-  
-  
     to {
         transform: translateX(0%);
         opacity: 1;
@@ -52,12 +104,35 @@ section.section{
 }
 @keyframes sd{
     from {
-        transform: translateY(0);
+        transform: translateY(-100%);
 
     }
   
-  
     to {
-        transform: translateY(10%);
+        transform: translateY(0);
         }
 }
+
+@keyframes movingupdown {
+    0%{
+        transform: translateY(0%);
+    }
+    50%{
+        transform: translateY(-5%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+@keyframes glow {
+    0%{
+        text-shadow: 0px 0px 0px rgb(255, 255, 255);
+    }
+    50%{
+        text-shadow: 2px 2px 20px rgb(250, 250, 157);
+    }
+    100%{
+        text-shadow: 0px 0px 0px rgb(255, 255, 255);
+    }
+}
+
