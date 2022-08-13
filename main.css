@@ -10,7 +10,26 @@
 }
 
 body {
-  background-color: rgb(241, 241, 241) !important;
+  background-color: rgb(245, 245, 245) !important;
+}
+
+a:hover {
+  color: #5c9dff !important;
+}
+
+h1 {
+  color: white;
+}
+
+nav {
+  border-bottom: 1px white solid;
+  color: white;
+}
+nav #navbarSupportedContent {
+  color: white !important;
+}
+nav #navbarSupportedContent .nav-link {
+  color: white;
 }
 
 .card {
@@ -18,17 +37,53 @@ body {
   margin-bottom: 100px !important;
   max-width: 1000px;
   min-height: 300px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: black !important;
+  color: white;
+}
+.card .card-text {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+.card .row {
+  padding: 50px;
+}
+.card img {
+  width: 100%;
+  max-height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 5px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.card img:hover {
+  opacity: 0.85;
 }
 
 .socio a {
   text-decoration: none;
 }
 
+video {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+
 section.section {
   height: 100vh;
   position: relative;
-  background-color: var(--main-color) !important;
   margin: 80px 0;
+}
+section.section h4 {
+  text-transform: uppercase;
+}
+section.section video {
+  width: 100%;
 }
 section.section img {
   position: absolute;
@@ -51,6 +106,19 @@ section.section .text h1 {
   -webkit-animation: glow 10s ease-in-out infinite;
           animation: glow 10s ease-in-out infinite;
 }
+section.section .text h4:hover {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  color: rgb(192, 192, 192);
+  text-shadow: 0px 0px 20px rgb(238, 255, 0);
+}
+
+footer h6, footer span {
+  color: white !important;
+}
+footer p {
+  color: rgb(206, 206, 206);
+}
 
 #myBtn {
   display: none;
@@ -67,7 +135,7 @@ section.section .text h1 {
   /* Remove borders */
   outline: none;
   /* Remove outline */
-  background-color: var(--main-color);
+  background-color: black;
   /* Set a background color */
   color: white;
   /* Text color */
@@ -82,12 +150,16 @@ section.section .text h1 {
 }
 
 #myBtn:hover {
-  background-color: #555;
+  background-color: var(--main-color);
   /* Add a dark-grey background on hover */
 }
 
 @media screen and (max-width: 1000px) {
+  section.section {
+    margin: 0;
+  }
   section.section .text {
+    padding: 10px;
     left: 10px;
   }
   section.section img {
@@ -174,7 +246,7 @@ section.section .text h1 {
     text-shadow: 0px 0px 0px rgb(255, 255, 255);
   }
   50% {
-    text-shadow: 2px 2px 20px rgb(250, 250, 157);
+    text-shadow: 0px 0px 50px rgb(252, 252, 252);
   }
   100% {
     text-shadow: 0px 0px 0px rgb(255, 255, 255);
@@ -185,7 +257,7 @@ section.section .text h1 {
     text-shadow: 0px 0px 0px rgb(255, 255, 255);
   }
   50% {
-    text-shadow: 2px 2px 20px rgb(250, 250, 157);
+    text-shadow: 0px 0px 50px rgb(252, 252, 252);
   }
   100% {
     text-shadow: 0px 0px 0px rgb(255, 255, 255);
