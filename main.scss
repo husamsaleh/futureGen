@@ -54,6 +54,11 @@ nav{
             opacity: .85;
         }
     }
+    a{
+        color: white;
+        text-decoration: none;
+        
+    }
 }
 .socio{
     a{
@@ -123,19 +128,20 @@ footer{
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 15px; /* Some padding */
     border-radius: 10px; /* Rounded corners */
-    
     font-size: 22px; /* Increase font size */
     max-width: 50px;
     min-width: 60px;
   }
   
   
-  #totoppls:hover {
-    background-color: var(--main-color); /* Add a dark-grey background on hover */
+  #totoppls ,#dark,#light {
+    &:hover{    
+        background-color: var(--main-color); /* Add a dark-grey background on hover */
+    }
   }
 
   .btnz-cont{
-    display: flex;
+    display: none;
     flex-direction: column;
     position: fixed;
     right: 30px;
