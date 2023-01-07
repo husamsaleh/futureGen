@@ -5,7 +5,7 @@ btnzswitch = document.getElementById("modeSwitcher");
 
 
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
   if (document.body.scrollTop > 560 || document.documentElement.scrollTop > 560) {
@@ -25,13 +25,13 @@ function topFunction() {
 
 lightfunction = document.querySelector("#dark").addEventListener("click", () => {
   if (document.querySelector("#dark").click) {
-    document.body.style =  'background-color: rgba(33, 33, 33, 1)  !important';
+    document.body.style = 'background-color: rgba(14, 14, 14, 1)  !important';
   }
 })
 
 darkfunction = document.querySelector("#light").addEventListener("click", () => {
   if (document.querySelector("#light").click) {
-    document.body.style =  'background-color: white  !important';
+    document.body.style = 'background-color: white  !important';
 
   }
 })

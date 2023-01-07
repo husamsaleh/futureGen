@@ -1,5 +1,5 @@
 :root {
-  --main-color:#0A58CA;
+  --main-color: #0A58CA;
 }
 
 * {
@@ -21,6 +21,11 @@ h1 {
   color: white;
 }
 
+.navbar-toggler-icon {
+  font-size: 12px;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+
 nav {
   border-bottom: 1px white solid;
   color: white;
@@ -30,6 +35,9 @@ nav #navbarSupportedContent {
 }
 nav #navbarSupportedContent .nav-link {
   color: white;
+}
+nav .navbar-toggler {
+  border-color: rgb(255, 255, 255);
 }
 
 .card {
@@ -117,7 +125,8 @@ section.section .text h4:hover {
   text-shadow: 0px 0px 20px rgb(255, 255, 255);
 }
 
-footer h6, footer span {
+footer h6,
+footer span {
   color: white !important;
 }
 footer p {
@@ -155,7 +164,9 @@ footer p {
   min-width: 60px;
 }
 
-#totoppls:hover, #dark:hover, #light:hover {
+#totoppls:hover,
+#dark:hover,
+#light:hover {
   background-color: var(--main-color);
   /* Add a dark-grey background on hover */
 }
@@ -172,7 +183,8 @@ footer p {
   z-index: 11111;
 }
 
-#dark, #light {
+#dark,
+#light {
   border: none;
   /* Remove borders */
   outline: none;
