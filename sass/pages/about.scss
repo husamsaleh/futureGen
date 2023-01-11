@@ -1,0 +1,69 @@
+.about__section1 {
+    background: url("/images/aboutsectionone.jpg");
+    height: 100vh;
+    background-size: cover;
+
+    .se1_txt {
+        position: absolute;
+        top: 50%;
+        left: 20%;
+        width: 700px;
+
+        h1 {
+            background: black;
+            padding: 20px 70px;
+            font-size: 62px;
+
+        }
+
+        p {
+            color: black;
+            background: white;
+            padding: 20px 70px;
+            width: 800px;
+        }
+    }
+}
+
+.about__section2 {
+    padding: 50px 0;
+
+    .container {
+        background-color: #000000;
+
+        p {
+            text-align: center;
+        }
+
+    }
+
+
+}
+
+.about__section3 {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .img_container {
+        width: 700px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .txt {
+        h2 {
+            font-size: 52px;
+            text-transform: uppercase;
+        }
+
+
+        li {
+            padding-top: 10px;
+            margin-left: 20px;
+        }
+    }
+}
