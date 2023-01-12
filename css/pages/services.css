@@ -1,0 +1,127 @@
+:root {
+  --main-color: rgb(0, 0, 0);
+  --secondary-color: rgb(149, 147, 255);
+  --white: white;
+  --black: black;
+}
+
+.sec1 {
+  background: url("/images/ourservicesfirstimage.jpg");
+  height: 100vh;
+  background-size: cover;
+}
+.sec1 .se1_txt {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  width: 700px;
+}
+.sec1 .se1_txt h1 {
+  background: black;
+  padding: 20px 70px;
+  font-size: 62px;
+}
+.sec1 .se1_txt p {
+  color: black;
+  background: white;
+  padding: 20px 70px;
+  width: 800px;
+}
+
+.sec2 {
+  min-height: 100vh;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  padding-top: 150px;
+}
+.sec2 .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.sec2 .column {
+  width: 100%;
+  padding: 0 1em 1em 1em;
+  text-align: center;
+}
+.sec2 .card {
+  width: 100%;
+  height: 100%;
+  padding: 2em 1.5em;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #ffffff), color-stop(50%, rgb(0, 0, 0)));
+  background: linear-gradient(#ffffff 50%, rgb(0, 0, 0) 50%);
+  background-size: 100% 200%;
+  background-position: 0 2.5%;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.sec2 h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1f194c;
+  margin: 1em 0;
+}
+.sec2 p {
+  color: #575a7b;
+  font-size: 15px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+}
+.sec2 .icon-wrap-bg {
+  background-color: var(--main-color);
+  position: relative;
+  margin: auto;
+  font-size: 30px;
+  height: 2.5em;
+  width: 2.5em;
+  color: #ffffff;
+  border-radius: 50%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.sec2 .card:hover {
+  background-position: 0 100%;
+}
+.sec2 .card:hover .icon-wrap-bg {
+  background-color: #ffffff;
+  color: var(--main-color);
+}
+.sec2 .card:hover h3 {
+  color: #ffffff;
+}
+.sec2 .card:hover p {
+  color: #f0f0f0;
+}
+@media screen and (min-width: 768px) {
+  .sec2 section {
+    padding: 0 2em;
+  }
+  .sec2 .column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 50%;
+            flex: 0 50%;
+    max-width: 50%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .sec2 section {
+    padding: 1em 3em;
+  }
+  .sec2 .column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.33%;
+            flex: 0 0 33.33%;
+    max-width: 33.33%;
+  }
+}

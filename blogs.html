@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FutureGen</title>
+    <script src="https://kit.fontawesome.com/f7e2387afa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./css/pages/blogs.css">
+    
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+</head>
+<body class="">
+  
+    <nav class="navbar navbar-expand-lg bg-black fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html"><h1>FutureGen</h1></a>
+          <button class="navbar-toggler mx-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./blogs.html">Blogs</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  About Us
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./about.html">Who We Are</a></li>
+                  <li><a class="dropdown-item" href="./Contact.html">Contact Us</a></li>
+                  <li><a class="dropdown-item" href="./services.html">Our Services</a></li>
+
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="./services.html">Terms of service </a></li>
+                  <li><a class="dropdown-item" href="./privacyPolicy.html">Privacy Policy</a></li>
+                </ul>
+              </li>
+             
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+
+
+
+
+
+      <!-- start of portfolio -->
+      <div class="por-nav" id="projects"> 
+        <h2>Blogs</h2>
+        <div id="por-myBtnContainer">
+          <button class="btn por-btn por-active" onclick="filterSelection('por-all')"> Show all</button>
+          <button class="btn por-btn" onclick="filterSelection('Artificial Intelligence')"> Artificial Intelligence</button>
+          <button class="btn por-btn" onclick="filterSelection('Programming')"> Programming</button>
+          <button class="btn por-btn" onclick="filterSelection('Business')"> Business</button>
+        </div></div>
+       
+
+
+<!-- Portfolio Gallery Grid -->
+<div class="por-row sec4 ">
+  <div class="por-column Artificial Intelligence">
+    <div class="por-content">
+      <img src="./images/Artificial Intelligence.jpg" alt="Artificial Intelligence" style="width:100%" loading="lazy">
+      <div class="txt-wrap">
+        <h4>Artificial Intelligence</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+      <div class="tags" id="blog__tags">
+        <ul>
+            Tags:
+            <li><a href="https://example1.com">HELLO</a></li>
+  <li><a href="https://example2.com">WELCOME</a></li>
+        </ul>
+    </div>
+    </div>
+  </div>
+  <div class="por-column Artificial Intelligence">
+    <div class="por-content">
+      <img src="./images/Artificial Intelligence2.jpg" alt="Artificial Intelligence" style="width:100%" loading="lazy">
+      <div class="txt-wrap">
+        <h4>Artificial Intelligence</h4>
+      <p>Lorem ipsum dolor..</p>
+      </div>
+      <div class="tags" id="blog__tags">
+        <ul>
+            Tags:
+            <li><a href="https://example1.com">HELLO</a></li>
+  <li><a href="https://example2.com">WELCOME</a></li>
+        </ul>
+    </div>
+    </div>
+    
+  </div>
+  <div class="por-column Artificial Intelligence">
+    <div class="por-content">
+      <img src="./images/Artificial Intelligence3.jpg" alt="Artificial Intelligence" style="width:100%" loading="lazy">
+      <div class="txt-wrap">
+        <h4>Artificial Intelligence</h4>
+      <p>Lorem ipsum dolor..</p>
+      </div>
+      <div class="tags" id="blog__tags">
+        <ul>
+            Tags:
+            <li><a href="https://example1.com">HELLO</a></li>
+  <li><a href="https://example2.com">WELCOME</a></li>
+        </ul>
+    </div>
+    </div>
+   
+  </div>
+
+  <div class="por-column Programming">
+    <div class="por-content">
+      <img src="./images/Programming.jpg" alt="Programming" style="width:100%" loading="lazy">
+      <div class="txt-wrap">
+        <h4>Programming</h4>
+      <p>Lorem ipsum dolor..</p>
+      </div>
+      <div class="tags" id="blog__tags">
+        <ul>
+            Tags:
+            <li><a href="https://example1.com">HELLO</a></li>
+  <li><a href="https://example2.com">WELCOME</a></li>
+        </ul>
+    </div>
+    </div>
+   
+  </div>
+  <div class="por-column Programming">
+    <div class="por-content">
+      <img src="./images/Programming2.jpg" alt="Programming" style="width:100%" loading="lazy">
+      <div class="txt-wrap">
+        <h4>Programming</h4>
+      <p>Lorem ipsum dolor..</p>
+      </div>
+      <div class="tags" id="blog__tags">
+        <ul>
+            Tags:
+            <li><a href="https://example1.com">HELLO</a></li>
+  <li><a href="https://example2.com">WELCOME</a></li>
+        </ul>
+    </div>
+    </div>
+   
+  </div>
+  <div class="por-column Programming">
+    <div class="por-content">
+      <img src="./images/Programming3.jpg" alt="Programming" style="width:100%" loading="lazy">
+     <div class="txt-wrap">
+      <h4>Programming</h4>
+      <p>Lorem ipsum dolor..</p>
+     </div>
+     <div class="tags" id="blog__tags">
+        <ul>
+            Tags:
+            <li><a href="https://example1.com">HELLO</a></li>
+  <li><a href="https://example2.com">WELCOME</a></li>
+        </ul>
+    </div>
+    </div>
+    
+  </div>
+
+  <div class="por-column Business">
+    <div class="por-content">
+      <img src="./images/Business.jpg" alt="Business" style="width:100%" loading="lazy">
+      <div class="txt-wrap">
+        <h4>Business</h4>
+      <p>Lorem ipsum dolor..</p>
+      </div>
+      <div class="tags" id="blog__tags">
+        <ul>
+            Tags:
+            <li><a href="https://example1.com">HELLO</a></li>
+  <li><a href="https://example2.com">WELCOME</a></li>
+        </ul>
+    </div>
+    </div>
+    
+  </div>
+  <div class="por-column Business">
+    <div class="por-content">
+      <img src="./images/Business2.jpg" alt="Business" style="width:100%" loading="lazy">
+      <div class="txt-wrap">
+        <h4>Business</h4>
+      <p>Lorem ipsum dolor..</p>
+      </div>
+      <div class="tags" id="blog__tags">
+        <ul>
+            Tags:
+            <li><a href="https://example1.com">HELLO</a></li>
+  <li><a href="https://example2.com">WELCOME</a></li>
+        </ul>
+    </div>
+    </div>
+    
+  </div>
+  <div class="por-column Business">
+    <div class="por-content">
+      <img src="./images/Business3.jpg" alt="Business" style="width:100%" loading="lazy">
+      <div class="txt-wrap">
+        <h4>Business</h4>
+      <p>Lorem ipsum dolor..</p>
+      </div>
+      <div class="tags" id="blog__tags">
+        <ul>
+            Tags:
+            <li><a href="https://example1.com">HELLO</a></li>
+  <li><a href="https://example2.com">WELCOME</a></li>
+        </ul>
+    </div>
+    </div>
+    
+  </div>
+<!-- END GRID -->
+</div>
+
+
+
+
+
+<script src="/main.js" defer></script>
+<script>
+    filterSelection("por-all") // Execute the function and show all columns
+  function filterSelection(c) {
+    var x, i;
+    x = document.getElementsByClassName("por-column");
+    if (c == "por-all") c = "";
+    // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+    for (i = 0; i < x.length; i++) {
+      w3RemoveClass(x[i], "por-show") ;
+      if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "por-show");
+    }
+  }
+  
+  // Show filtered elements
+  function w3AddClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      if (arr1.indexOf(arr2[i]) == -1) {
+        element.className += " " + arr2[i];
+      }
+    }
+  }
+  
+  // Hide elements that are not selected
+  function w3RemoveClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      while (arr1.indexOf(arr2[i]) > -1) {
+        arr1.splice(arr1.indexOf(arr2[i]), 1);
+      }
+    }
+    element.className = arr1.join(" ");
+  }
+  
+  // Add active class to the current button (highlight it)
+  var btnContainer = document.getElementById("por-myBtnContainer");
+  var btns = btnContainer.getElementsByClassName("por-btn");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function(){
+      var current = document.getElementsByClassName("por-active");
+      current[0].className = current[0].className.replace(" por-active", "");
+      this.className += " por-active";
+    });
+  }
+  </script>
+  <script>const redirectToBlogO = () => {
+    window.location.href = "./blogO.html";
+  }
+  
+  const elements = document.querySelectorAll("img, .txt-wrap");
+  elements.forEach(element => {
+    element.addEventListener("click", redirectToBlogO);
+  });</script>
+</body>
+</html>
