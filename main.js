@@ -8,7 +8,7 @@ btnzswitch = document.getElementById("modeSwitcher");
 window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
-  if (document.body.scrollTop > 560 || document.documentElement.scrollTop > 560) {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
     mybutton.style.display = "block";
     btnzswitch.style.display = "flex";
   } else {

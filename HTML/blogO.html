@@ -18,14 +18,14 @@
   
     <nav class="navbar navbar-expand-lg bg-black fixed-top">
         <div class="container-fluid">
-          <a class="navbar-brand" href="./index.html"><h1>FutureGen</h1></a>
+          <a class="navbar-brand" href="/index.html"><h1>FutureGen</h1></a>
           <button class="navbar-toggler mx-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./blogs.html">Blogs</a>
@@ -54,7 +54,7 @@
         </div>
       </nav>
 
-      <!-- if you like header and page breadcrumb ucomment section below -->
+      <!-- if you like header and page breadcrumb uncomment the section below -->
 <!--  
       <section class="header" id="header">
         <h1 class="Blog__name" id="Blog__name">BlogO</h1>
@@ -79,8 +79,8 @@
       </div>
       <div class="post__info">
         <ul>
-              <li class="author__name" id="author__name"> 
-                <img src="/images/user_icon.png" alt="">
+              <li class="author__name mod_dark" id="author__name "> 
+                <img  class="mod_dark" src="/images/user_icon.png" alt="">
                 <a href="http://centrago.tech/">CentraGo</a>
               </li>
                     
@@ -97,6 +97,37 @@
                     </li>
                 </ul>
       </div>
+
+      <div class="container mod_dark">
+        <h2>Introduction to Artificial Intelligence (AI)</h2>
+<p>Artificial intelligence, or AI, is a rapidly growing field that has the potential to revolutionize the way we live and work. At its core, AI involves the development of computer systems that can perform tasks that would normally require human intelligence, such as recognizing speech, understanding natural language, and making decisions.</p>
+<h3>Types of AI</h3>
+<p>There are two main types of AI: narrow or weak AI, which is designed to perform a specific task, and general or strong AI, which has the ability to perform any intellectual task that a human can. Narrow AI is already being used in a wide range of applications, such as virtual assistants, self-driving cars, and image recognition software.</p>
+<h3>Machine Learning</h3>
+<p>One of the most exciting areas of AI research is in the field of machine learning, which involves training computer systems to learn from data and improve their performance over time. This is done using algorithms that can identify patterns in large amounts of data and make predictions based on those patterns.</p>
+<h2>Benefits and Concerns of AI</h2>
+<p>Some of the potential benefits of AI include increased efficiency and productivity, improved decision-making, and the ability to automate repetitive tasks. However, there are also concerns about the impact of AI on employment and privacy, as well as the possibility of creating autonomous systems that could make decisions that are harmful to humans.</p>
+<h3>Ensuring Ethical Development of AI</h3>
+<p>To ensure that the development of AI is aligned with the values of society, it is important for governments, businesses, and researchers to engage in ongoing dialogue and collaboration. This includes ensuring that AI is developed in an ethical and transparent manner, and that its benefits are distributed fairly across society.</p>
+<p>Overall, AI is a powerful technology with the potential to transform many aspects of our lives, but it is important to approach its development with caution and consideration for the potential risks and consequences.</p>
+      </div>
+
+<div class="mod_dark">
+  <!-- HTML for the comment form -->
+<form id="comment-form" class="comment-form mod_dark">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name"><br>
+  <label for="comment">Comment:</label>
+  <textarea id="comment" name="comment"></textarea><br>
+  <button type="submit">Submit</button>
+</form>
+
+<!-- HTML for the comment section -->
+<div class="container comments mod_dark" id="comments" >
+  <h3>Comments: </h3>
+  <div id="display-comments" class="display-comments mod_dark"></div>
+</div>
+</div>
 
 
 
@@ -216,7 +247,33 @@
     <!-- Copyright -->
   </footer>
   <!-- Footer -->
+  <script>// JavaScript for handling form submission and displaying comments
+    const form = document.getElementById("comment-form");
+    const commentsDiv = document.getElementById("display-comments");
+    
+    form.addEventListener("submit", function(event) {
+      event.preventDefault(); // prevent the page from refreshing
+    
+      // Get the values entered in the form
+      const name = document.getElementById("name").value;
+      const comment = document.getElementById("comment").value;
+    
+      // Create a new element to display the comment
+      const newComment = document.createElement("div");
+      newComment.classList.add("comment");
+      newComment.innerHTML = `
+        <p class="comment-name">Name: ${name}</p>
+        <p>Comment: ${comment}</p>
+      `;
+     
+      // Add the new comment to the comments section
+      commentsDiv.appendChild(newComment);
+     
+      // Clear the form fields
+      form.reset();
 
+    });
+    </script>
   <script src="/main.js" defer></script>
 </body>
 </html>
