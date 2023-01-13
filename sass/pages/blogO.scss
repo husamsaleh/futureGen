@@ -1,0 +1,74 @@
+.header {
+    height: 20vh;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    h1 {
+        color: var(--main-color) !important;
+
+    }
+
+    .breadcrumbs {
+        ul {
+            display: flex;
+            list-style: none;
+            color: var(main-color);
+
+            li {
+                padding: 0 10px;
+            }
+        }
+    }
+}
+
+.post {
+    .sec1__post {
+        width: 100%;
+        height: 300px;
+        background-image: url('/images/Programming2.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 63px;
+        position: relative;
+
+
+        .post__title {
+            position: absolute;
+
+            left: 0;
+            bottom: 0;
+            width: 100%;
+
+            h1 {
+                padding: 10px;
+                font-size: 52px;
+                background: rgba(0, 0, 0, 0.562);
+                margin: 0;
+            }
+
+
+        }
+
+
+    }
+}
+
+
+.post__info {
+
+
+    ul {
+        display: flex;
+        list-style: none;
+
+        li {
+            padding-left: 50px;
+        }
+    }
+}

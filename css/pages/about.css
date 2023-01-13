@@ -10,13 +10,13 @@
   width: 700px;
 }
 .about__section1 .se1_txt h1 {
-  background: black;
+  background: var(--main-color);
   padding: 20px 70px;
   font-size: 62px;
 }
 .about__section1 .se1_txt p {
-  color: black;
-  background: white;
+  color: var(--main-color);
+  background: var(--secondary-color);
   padding: 20px 70px;
   width: 800px;
 }
