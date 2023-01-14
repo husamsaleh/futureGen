@@ -1,7 +1,7 @@
 .contact-form {
     background: var(--secondary-color);
-
     width: 70%;
+
 }
 
 .contact-form .form-control {
@@ -56,4 +56,10 @@
     color: #fff;
     border: none;
     cursor: pointer;
+}
+
+@media screen and (max-width:600px) {
+    .contact-form {
+        margin-top: 50px;
+    }
 }

@@ -131,3 +131,26 @@
         }
     }
 }
+
+@media screen and (max-width: 600px) {
+    .sec1 .se1_txt {
+        left: 5%;
+        width: 400px;
+
+
+    }
+
+    .sec1 .se1_txt h1 {
+        font-size: 32px;
+        width: fit-content;
+    }
+
+    .sec1 .se1_txt p {
+        font-size: 12px;
+        width: fit-content;
+        max-width: 440px;
+        padding: 20px 18px;
+
+
+    }
+}

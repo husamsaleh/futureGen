@@ -158,3 +158,26 @@
     width: 100%;
   }
 }
+@media screen and (max-width: 600px) {
+  .por-row .txt-wrap {
+    border-radius: unset;
+  }
+  .por-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .por-content img {
+    min-height: unset;
+    max-height: 300px;
+    max-width: unset;
+    border-radius: unset;
+  }
+  .tags {
+    bottom: -20px;
+  }
+}
+.por-column {
+  margin-left: 5%;
+}

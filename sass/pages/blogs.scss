@@ -39,14 +39,13 @@
 /* Create three equal columns that floats next to each other */
 .por-column {
     background-color: var(--main-color);
-    ;
     float: left;
     width: 70%;
     display: none;
     margin-left: 15%;
     margin-top: 100px;
     box-shadow: 0px 0px 5px 5px var(--main-color);
-    ;
+
 
     /* Hide columns by default */
 
@@ -62,19 +61,21 @@
 
 /* Content */
 .por-content {
+
     background-color: var(--secondary-color);
-    ;
+
     display: flex;
     padding: 10px;
     justify-content: center;
     position: relative;
 
+
     .tags {
         position: absolute;
         color: var(--main-color);
-        ;
+
         background-color: var(--secondary-color);
-        ;
+
         right: 0;
         bottom: 0;
         border: 3px solid rgb(0, 0, 0);
@@ -145,6 +146,7 @@
 }
 
 @media screen and (max-width:820px) {
+
     .sec4 {
         min-height: fit-content;
         display: flex;
@@ -157,6 +159,39 @@
 
         }
     }
+
+
+
+}
+
+
+@media screen and (max-width:600px) {
+    .por-row .txt-wrap {
+        border-radius: unset;
+    }
+
+    .por-content {
+        flex-direction: column;
+
+        img {
+            min-height: unset;
+            max-height: 300px;
+            max-width: unset;
+            border-radius: unset;
+        }
+
+    }
+
+    .tags {
+        bottom: -20px;
+
+    }
+
+}
+
+.por-column {
+    margin-left: 5%;
+
 
 
 

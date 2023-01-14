@@ -221,6 +221,19 @@ footer p {
     top: 20%;
   }
 }
+@media screen and (max-width: 600px) {
+  #totoppls,
+#dark,
+#light {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    max-width: 40px;
+    min-width: 40px;
+    border: 1px white solid;
+  }
+}
 @-webkit-keyframes intro {
   from {
     opacity: 0.3;

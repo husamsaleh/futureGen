@@ -11,7 +11,7 @@
 
         h1 {
             background: var(--main-color);
-            ;
+
             padding: 20px 70px;
             font-size: 62px;
 
@@ -70,4 +70,51 @@
             margin-left: 20px;
         }
     }
+}
+
+@media screen and (max-width:600px) {
+    .about__section1 {
+        .se1_txt {
+            width: 400px;
+            left: 5%;
+
+            h1 {
+                font-size: 32px;
+            }
+
+            p {
+                font-size: 14px;
+                width: fit-content;
+            }
+        }
+    }
+
+
+    .about__section3 {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+
+        .img_container {
+            width: 300px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .txt {
+            h2 {
+                font-size: 32px;
+                text-transform: uppercase;
+            }
+
+
+            li {
+                padding-top: 10px;
+                margin-left: 20px;
+            }
+        }
+    }
+
 }
