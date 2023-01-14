@@ -1,5 +1,5 @@
 .sec1 {
-  background: url("/images/ourservicesfirstimage.jpg");
+  background: url("../../images/ourservicesfirstimage.jpg");
   height: 100vh;
   background-size: cover;
 }
