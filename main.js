@@ -4,19 +4,7 @@ mybutton = document.getElementById("totoppls");
 btnzswitch = document.getElementById("modeSwitcher");
 
 
-// When the user scrolls down 20px from the top of the document, show the button
-// window.onscroll = function () { scrollFunction() };
 
-// function scrollFunction() {
-
-//   if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-//     mybutton.style.display = "block";
-//     btnzswitch.style.display = "flex";
-//   } else {
-//     mybutton.style.display = "none";
-//     btnzswitch.style.display = "none";
-//   }
-// }
 
 
 if (window.innerWidth > 601) {
@@ -51,23 +39,6 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-// lightfunction = document.querySelector("#dark").addEventListener("click", () => {
-//   if (document.querySelector("#dark").click) {
-//     document.body.style = 'background-color: rgba(14, 14, 14, 1)  !important';
-//     [...document.querySelectorAll(".mod_dark, .mod_dark > p")].forEach(element => element.style.color = "white");
-
-//   }
-// })
-
-// darkfunction = document.querySelector("#light").addEventListener("click", () => {
-//   if (document.querySelector("#light").click) {
-//     document.body.style = 'background-color: white  !important';
-//     [...document.querySelectorAll(".mod_dark, .mod_dark > p")].forEach(element => element.style.color = "black");
-
-
-//   }
-// })
-// Save the user's preference when they click the light or dark button
 lightfunction = document.querySelector("#dark").addEventListener("click", () => {
   localStorage.setItem("theme", "dark");
   document.body.style = 'background-color: rgba(14, 14, 14, 1)  !important';
@@ -89,3 +60,43 @@ if (theme === "dark") {
   document.body.style = 'background-color: white  !important';
   [...document.querySelectorAll(".mod_dark, .mod_dark > p")].forEach(element => element.style.color = "black");
 }
+
+
+window.onload = function () {
+  document.addEventListener("contextmenu", function (e) {
+    e.preventDefault();
+  }, false);
+  document.addEventListener("keydown", function (e) {
+    //document.onkeydown = function(e) {
+    // "I" key
+    if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+      disabledEvent(e);
+    }
+    // "J" key
+    if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+      disabledEvent(e);
+    }
+    // "S" key + macOS
+    if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+      disabledEvent(e);
+    }
+    // "U" key
+    if (e.ctrlKey && e.keyCode == 85) {
+      disabledEvent(e);
+    }
+    // "F12" key
+    if (event.keyCode == 123) {
+      disabledEvent(e);
+    }
+  }, false);
+  function disabledEvent(e) {
+    if (e.stopPropagation) {
+      e.stopPropagation();
+    } else if (window.event) {
+      window.event.cancelBubble = true;
+    }
+    e.preventDefault();
+    return false;
+  }
+}
+
