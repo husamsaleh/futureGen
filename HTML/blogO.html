@@ -113,8 +113,18 @@
       </div>
 
 <div class="mod_dark">
+  <!-- HTML for the comment section -->
+<div class="container comments mod_dark" id="comments" >
+  <h3>Comments: </h3>
+  <div id="display-comments" class="display-comments mod_dark">
+    <div class="cmt" id="cmt">
+      <p><span style="font-weight: 800;">Name:</span> CentraGo</p>
+      <p> <span style="font-weight: 800;">Comment: </span>Great blog thank you so much</p>
+    </div>
+  </div>
+</div>
   <!-- HTML for the comment form -->
-<form id="comment-form" class="comment-form mod_dark">
+<form id="comment-form" class="comment-form mod_dark container">
   <label for="name">Name:</label>
   <input type="text" id="name" name="name"><br>
   <label for="comment">Comment:</label>
@@ -122,11 +132,7 @@
   <button type="submit">Submit</button>
 </form>
 
-<!-- HTML for the comment section -->
-<div class="container comments mod_dark" id="comments" >
-  <h3>Comments: </h3>
-  <div id="display-comments" class="display-comments mod_dark"></div>
-</div>
+
 </div>
 
 
@@ -262,8 +268,10 @@
       const newComment = document.createElement("div");
       newComment.classList.add("comment");
       newComment.innerHTML = `
-        <p class="comment-name">Name: ${name}</p>
-        <p>Comment: ${comment}</p>
+      <div class="cmt " id="cmt">
+        <p class="comment-name ">Name: ${name}</p>
+        <p>Comment: ${comment}</p> </div>
+        
       `;
      
       // Add the new comment to the comments section

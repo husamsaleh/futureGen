@@ -26,6 +26,7 @@
 }
 .about__section2 .container {
   background-color: #000000;
+  border: white solid 2px;
 }
 .about__section2 .container p {
   text-align: center;
